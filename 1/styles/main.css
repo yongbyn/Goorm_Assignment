@@ -1,0 +1,66 @@
+.video-content {
+  height: 1000px; /* 확대하기 전에도 미리 스크롤 많이 내릴 수 있게.. */
+}
+.video-container {
+  width: 100%;
+}
+
+.video-type-title {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.video-poster-container {
+  /* background-color: lightcoral; 크기 확인용*/
+  display: flex;
+  /* column-gap: 16px; */
+  /* row-gap: 40px; */
+  margin-left: 1%;
+  height: 250px;
+  flex-direction: row;
+}
+
+.video-poster-1st {
+  height: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.video-poster {
+  height: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.video-poster-end {
+  height: 100%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/* 이동시키는 클래스를 만들어서 컴퍼넌트에 클래스를 추가하는 방식 */
+
+.video-poster-1st:hover {
+  transform: translate(80px, 0) scale(1.8);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.video-poster:hover {
+  transform: scale(1.8);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.video-poster-end:hover {
+  transform: translate(-80px, 0) scale(1.8);
+  z-index: 100;
+  cursor: pointer;
+}
